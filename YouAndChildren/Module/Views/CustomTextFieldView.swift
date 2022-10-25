@@ -17,9 +17,10 @@ class CustomTextFieldView: UIView {
         return view
     }()
     
-    init(labellName: String) {
+    init(labellName: String, keyboardType: UIKeyboardType) {
         nameLabel.text = labellName
         super.init(frame: .zero)
+        textField.keyboardType = keyboardType
         setupViews()
         layer.borderWidth = 1
         layer.borderColor = UIColor(named: "gray")?.cgColor

@@ -2,8 +2,8 @@ import UIKit
 
 class ChildTableViewCell: UITableViewCell, Subscriber {
 
-    private let nameField = CustomTextFieldView(labellName: "Имя")
-    private let ageField = CustomTextFieldView(labellName: "Возраст")
+    private let nameField = CustomTextFieldView(labellName: "Имя",keyboardType: .alphabet)
+    private let ageField = CustomTextFieldView(labellName: "Возраст", keyboardType: .numberPad)
     private lazy var deleteButton = Button(text: "Удалить") { [weak self] in
         guard let self = self else {return}
         self.closure()

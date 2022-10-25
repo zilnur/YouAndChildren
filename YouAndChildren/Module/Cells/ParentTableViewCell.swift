@@ -2,8 +2,8 @@ import UIKit
 
 class ParentTableViewCell: UITableViewCell, Subscriber {
 
-    private let nameField = CustomTextFieldView(labellName: "Имя")
-    private let ageField = CustomTextFieldView(labellName: "Возраст")
+    private let nameField = CustomTextFieldView(labellName: "Имя",keyboardType: .alphabet)
+    private let ageField = CustomTextFieldView(labellName: "Возраст", keyboardType: .numberPad)
     var indexPath: IndexPath?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
